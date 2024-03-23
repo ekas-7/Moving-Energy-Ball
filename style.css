@@ -21,15 +21,7 @@ body {
     width: 18.75rem;  /* 300px converted to rem */
     animation: bottom-to-top 18s ease-in-out infinite ;
 }
-.en2{
-    position: absolute;
-    bottom: 30vh ; /* 30vh converted to rem */
-    left: 44vw;    /* 44vw converted to rem */
-    height: 18.75rem; /* 300px converted to rem */
-    width: 18.75rem;  /* 300px converted to rem */
-    animation: bottom-to-top 18s ease-in-out infinite ;
-    animation-delay: 0s;
-}
+
 
 .energy span {
     position: absolute;
@@ -90,7 +82,7 @@ body {
         z-index: 1;
     }
     100% {
-        transform: translate(-135%, 135%) scale(1) ;
+        transform: translate(-135%, 135%) scale(0.4) ;
         z-index: 1;
     }
 }
