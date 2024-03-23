@@ -5,34 +5,43 @@
 }
 
 body {
-   
-   
+    
 }
-#intro{
+
+#intro {
     min-height: 100vh;
     background-color: #001523;
 }
 
 .energy {
     position: absolute;
-    bottom: -50px;
-    left:-50px;
-    height: 300px;
-    width: 300px;
-    animation: top-to-bottom 4s linear infinite;
+    bottom: 30vh ; /* 30vh converted to rem */
+    left: 44vw;    /* 44vw converted to rem */
+    height: 18.75rem; /* 300px converted to rem */
+    width: 18.75rem;  /* 300px converted to rem */
+    animation: bottom-to-top 18s ease-in-out infinite ;
+}
+.en2{
+    position: absolute;
+    bottom: 30vh ; /* 30vh converted to rem */
+    left: 44vw;    /* 44vw converted to rem */
+    height: 18.75rem; /* 300px converted to rem */
+    width: 18.75rem;  /* 300px converted to rem */
+    animation: bottom-to-top 18s ease-in-out infinite ;
+    animation-delay: 0s;
 }
 
 .energy span {
     position: absolute;
-    width: calc(300px + var(--i));
-    height: calc(300px + var(--i));
+    width: calc(18.75rem + var(--i));
+    height: calc(18.75rem + var(--i));
     background: var(--clr);
     border-radius: 50%;
-    transform-origin: 100px;
+    transform-origin: 6.25rem; /* 100px converted to rem */
     animation: animate 6s linear infinite;
     animation-duration: calc(var(--d));
     mix-blend-mode: plus-lighter;
-    filter: blur(30px);
+    filter: blur(1.875rem); /* 30px converted to rem */
 }
 
 .energy span:nth-child(even) {
@@ -47,28 +56,43 @@ body {
         transform: rotate(360deg);
     }
 }
-
-
-
-@keyframes top-to-bottom {
+@keyframes bottom-to-top {
     0% {
-        transform: translate(-50px,-50px) scale(0.4);
+        transform: translate(-135%, 135%) scale(0.4) ;
+        z-index: 1;
     }
-    20% {
-        transform: translate(150px, 600px) scale(0.8);
+    12.5% {
+        transform: translate(0%, -250%) scale(0.8) ;
+        z-index: 1;
+    }
+    25% {
+        transform: translate(135%, 135%) scale(0.4) ;
+        z-index: 1;
+    }
+    37.5% {
+        transform: translate(200%, 0%) scale(0.4) ;
+        z-index: 1;
     }
     50% {
-        transform: translate(300px, 200px) scale(0.4);
+        transform: translate(135%, -135%) scale(0.4) ;
+        z-index: 1;
     }
-    70% {
-        transform: translate(350px, 100px) scale(0.8);
+    62.5% {
+        transform: translate(0%, 135%) scale(0.4);
+        z-index: 1;
+    }
+    75% {
+        transform: translate(-135%, -135%) scale(0.4);
+        z-index: 1;
+    }
+    87.5% {
+        transform: translate(-250%, 0%) scale(0.8) ;
+        z-index: 1;
     }
     100% {
-        transform: translate(-50px, -50px) scale(0.4);
+        transform: translate(-135%, 135%) scale(1) ;
+        z-index: 1;
     }
 }
-
-
-    
 
 
