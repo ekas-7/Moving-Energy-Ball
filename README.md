@@ -1,4 +1,4 @@
-## Moving Enegy Ball
+# Moving Enegy Ball
 
 This project is a Moving Energy Ball Animation
 
